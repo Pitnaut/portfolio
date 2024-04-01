@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.title-dark {
+  @apply ps-2 font-rubik text-slate-900 text-4xl font-rubik;
+}
+
+.title-light {
+  @apply ps-2 font-rubik text-slate-200 text-4xl font-rubik;
+}
