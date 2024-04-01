@@ -9,13 +9,27 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+		<script type="module" src="/src/pages/main.js" defer></script>
 	</head>
-	<body>
-		<h1 class="bg-blue-700 text-white">Pedro Arévalo</h1>
-		<h1 class="bg-blue-600 text-white">Studies</h1>
-		<h1 class="bg-blue-500">Work</h1>
-		<h1 class="bg-blue-400">Projects</h1>
-		<h1 class="bg-blue-300">about Me</h1>
-		<h1 class="bg-blue-200"> Conctact</h1>
+	<body class="h-screen">
+		<div class="accordion bg-blue-700 h-[16.67vh] overflow-hidden cursor-pointer transition-height duration-300 ease-in-out">
+			<h1 class=" text-slate-200">Pedro Arévalo</h1>
+		</div>
+		<div class="accordion bg-blue-600 h-[16.67vh] overflow-hidden cursor-pointer transition-height duration-300 ease-in-out">
+			<h1 class= "text-slate-200">Studies</h1>
+		</div>
+		<div class="accordion bg-blue-500 h-[16.67vh] overflow-hidden cursor-pointer transition-height duration-300 ease-in-out">
+			<h1 class="text-slate-200">Work</h1>
+		</div>
+		<div class="accordion bg-blue-400 h-[16.67vh] overflow-hidden cursor-pointer transition-height duration-300 ease-in-out">
+			<h1>Projects</h1>
+		</div>
+		<div class="accordion bg-blue-300 h-[16.67vh] overflow-hidden cursor-pointer transition-height duration-300 ease-in-out">
+			<h1>about Me</h1>
+		</div>
+		<div class="accordion bg-blue-200 h-[16.67vh] overflow-hidden cursor-pointer transition-height duration-300 ease-in-out">
+			<h1>Conctact</h1>
+		</div>
+
 	</body>
 </html>
