@@ -6,6 +6,9 @@ export default {
 			transitionProperty: {
         'height': 'height',
       },
+			translate: {
+				'-full': '-100%',
+			},
 			fontFamily: {
 				'rubik': ['Rubik Mono One', 'sans-serif']
 			}

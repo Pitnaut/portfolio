@@ -13,7 +13,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         // Show the h1 element in the currently open accordion
         const currentlyOpenTitle = currentlyOpen.querySelector('h1');
-        currentlyOpenTitle.classList.remove('opacity-0');
+        currentlyOpenTitle.classList.remove('opacity-0', 'translate-x-full', 'hidden'); // Add 'hidden' here
+
+        // Hide the bio content in the currently open accordion
+        const currentlyOpenBioContent = currentlyOpen.querySelector('.bio-content');
+        if (currentlyOpenBioContent) {
+          currentlyOpenBioContent.classList.add('opacity-0');
+        }
       }
 
       // If the clicked accordion was not the one that was open, open it
@@ -24,7 +30,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         // Hide the h1 element in the clicked accordion
         const accordionTitle = accordion.querySelector('h1');
-        accordionTitle.classList.add('opacity-0');
+        accordionTitle.classList.add('opacity-0', 'hidden'); // Add 'hidden' here
+
+        // Show the bio content in the clicked accordion
+        const accordionBioContent = accordion.querySelector('.bio-content');
+        if (accordionBioContent) {
+          accordionBioContent.classList.remove('opacity-0');
+        }
       } else {
         // If the clicked accordion was the one that was open, close it
         accordion.classList.remove('open');
@@ -41,7 +53,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
           // Show the h1 element in the other accordions
           const otherAccordionTitle = otherAccordion.querySelector('h1');
-          otherAccordionTitle.classList.remove('opacity-0');
+          otherAccordionTitle.classList.remove('opacity-0', 'hidden'); // Add 'hidden' here
         }
       });
     });
