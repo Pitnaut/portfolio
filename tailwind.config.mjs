@@ -10,6 +10,9 @@ export default {
 							'open': '65vh',
 							'shrink': '7vh',
 					},
+					transitionProperty: {
+						'bodyColorTransition': 'transition ease-in-out duration-300'
+					},
 					animation: {
 							'fade-in': 'fadeIn 0.5s ease-in-out',
 					},
