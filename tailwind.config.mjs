@@ -10,18 +10,12 @@ export default {
 							'open': '65vh',
 							'shrink': '7vh',
 					},
-					transitionProperty: {
-						'bodyColorTransition': 'transition ease-in-out duration-300'
+					transitionTimingFunction: {
+						'ease-custom': 'ease-in-out',
 					},
-					animation: {
-							'fade-in': 'fadeIn 0.5s ease-in-out',
-					},
-					keyframes: {
-							fadeIn: {
-									'0%': { opacity: '0' },
-									'100%': { opacity: '1' },
-							},
-					},
+					transitionDuration: {
+						'custom1s': '1s',
+					},		
 			},
 	},
 	plugins: [],
