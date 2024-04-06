@@ -1,4 +1,5 @@
 import { changeBodyColor, resetBodyColor } from './colorHandler';
+import { showContent, hideContent } from './sectionsContent';
 
 export const openAccordion = (accordion, accordions, title) => {
   accordions.forEach((otherAccordion) => {
@@ -11,6 +12,7 @@ export const openAccordion = (accordion, accordions, title) => {
   accordion.classList.add('h-open');
   accordion.classList.remove('h-shrink');
   changeBodyColor(accordion);
+  
   
 
   title.style.opacity = '0';
@@ -30,6 +32,12 @@ export const openAccordion = (accordion, accordions, title) => {
       }, 600);
     }
   });
+
+  setTimeout(() => {
+    const bioContent = accordion.querySelector('.bio-content');
+    showContent(bioContent);
+  }, 1000)
+
 }
 
 export const closeAccordion = (accordion, accordions, title) => {
@@ -37,17 +45,22 @@ export const closeAccordion = (accordion, accordions, title) => {
   accordion.classList.remove('h-shrink');
   resetBodyColor();
 
+  const bioContent = accordion.querySelector('.bio-content');
+  hideContent(bioContent);
+
   setTimeout(() => {
     title.style.display = 'flex';
     accordion.classList.add('items-center');
     accordion.classList.remove('items-start');
     setTimeout(() => {
       title.style.opacity = '1';
-    }, 400);
-  }, 400);
+    }, 600);
+  }, 600);
 
   accordions.forEach((otherAccordion) => {
     otherAccordion.classList.remove('h-shrink');
   });
 
+  
+  
 }
