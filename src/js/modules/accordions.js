@@ -1,4 +1,5 @@
 import { changeBodyColor, resetBodyColor } from './colorHandler';
+import { showBioContent, hideBioContent } from './content';
 
 export const openAccordion = (accordion, accordions, title) => {
   accordions.forEach((otherAccordion) => {
@@ -30,6 +31,11 @@ export const openAccordion = (accordion, accordions, title) => {
       }, 600);
     }
   });
+
+  if (accordion.classList.contains('bio-main')){
+    showBioContent(accordion);
+  }
+
 }
 
 export const closeAccordion = (accordion, accordions, title) => {
@@ -49,5 +55,9 @@ export const closeAccordion = (accordion, accordions, title) => {
   accordions.forEach((otherAccordion) => {
     otherAccordion.classList.remove('h-shrink');
   });
+
+  if (accordion.classList.contains('bio-main')){
+    hideBioContent(accordion);
+  }
 
 }
