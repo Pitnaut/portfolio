@@ -32,9 +32,11 @@ export const openAccordion = (accordion, accordions, title) => {
     }
   });
 
-  if (accordion.classList.contains('bio-main')){
-    showBioContent(accordion);
-  }
+  setTimeout(() => {
+    if (accordion.classList.contains('bio-main')){
+      showBioContent(accordion);
+    }
+  }, 600);
 
 }
 
@@ -42,6 +44,10 @@ export const closeAccordion = (accordion, accordions, title) => {
   accordion.classList.remove('h-open');
   accordion.classList.remove('h-shrink');
   resetBodyColor();
+
+  if (accordion.classList.contains('bio-main')){
+    hideBioContent(accordion);
+  }
 
   setTimeout(() => {
     title.style.display = 'flex';
@@ -56,8 +62,5 @@ export const closeAccordion = (accordion, accordions, title) => {
     otherAccordion.classList.remove('h-shrink');
   });
 
-  if (accordion.classList.contains('bio-main')){
-    hideBioContent(accordion);
-  }
 
 }
