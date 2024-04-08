@@ -1,15 +1,19 @@
 export const showBioContent = (accordion) => {
   const bioContent = accordion.querySelector('.bio-content');
   if (bioContent) {
-    bioContent.classList.remove('hidden'); 
-    bioContent.classList.add('flex'); 
+    bioContent.classList.remove('hidden', 'opacity-0'); 
+    bioContent.classList.add('flex', 'opacity-100'); 
   }
 }
 
 export const hideBioContent = (accordion) => {
   const bioContent = accordion.querySelector('.bio-content');
   if (bioContent) {
-    bioContent.classList.remove('flex');
-    bioContent.classList.add('hidden');
+    bioContent.classList.remove('opacity-100');
+    bioContent.classList.add('transition-opacity', 'duration-500', 'ease-in-out', 'opacity-0');
+
+    setTimeout(() => {
+      bioContent.classList.add('hidden');
+    }, 400); 
   }
 }
