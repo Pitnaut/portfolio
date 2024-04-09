@@ -15,7 +15,8 @@ export default {
 					},
 					transitionDuration: {
 						'custom1s': '1s',
-					},		
+					},
+				
 			},
 	},
 	plugins: [],

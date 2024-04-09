@@ -24,8 +24,7 @@ export const openAccordion = (accordion, accordions, title) => {
   accordions.forEach((otherAccordion) => {
     if (otherAccordion !== accordion) {
       otherAccordion.classList.add('h-shrink');
-      const otherTitle = otherAccordion.querySelector('.accordion-title');
-      otherTitle.style.display = 'flex';
+      const otherTitle = otherAccordion.querySelector('.accordion-title');   
       setTimeout(() => {
         otherTitle.style.opacity = '1';
       }, 600);
@@ -61,6 +60,5 @@ export const closeAccordion = (accordion, accordions, title) => {
   accordions.forEach((otherAccordion) => {
     otherAccordion.classList.remove('h-shrink');
   });
-
-
+  
 }
