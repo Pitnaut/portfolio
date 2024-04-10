@@ -4,7 +4,10 @@ export default {
 	theme: {
 			extend: {
 					fontFamily: {
-							'rubik': ['Rubik Mono One', 'sans-serif']
+							'questrial': ['Questrial', 'sans-serif'],
+					},
+					fontSize: {
+						'customsize': '3.25rem'
 					},
 					height: {
 							'open': '65vh',
