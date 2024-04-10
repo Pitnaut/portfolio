@@ -19,7 +19,14 @@ export default {
 					transitionDuration: {
 						'custom1s': '1s',
 					},
-				
+					colors: {
+						'bio-color': '#c3fdba',
+						'studies-color': '#e2eda5',
+						'work-color': '#fadca0',
+						'projects-color': '#ffcdaa',
+						'social-color': '#ffc1bb',
+						'contact-color': '#fdbace',
+					}
 			},
 	},
 	plugins: [],
