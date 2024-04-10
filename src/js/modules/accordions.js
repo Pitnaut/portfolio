@@ -1,5 +1,5 @@
 import { changeBodyColor, resetBodyColor } from './colorHandler';
-import { showBioContent, hideBioContent } from './content';
+import { showBioContent, hideBioContent } from './contentBio';
 
 export const openAccordion = (accordion, accordions, title) => {
   accordions.forEach((otherAccordion) => {
