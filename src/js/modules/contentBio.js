@@ -1,11 +1,4 @@
-const animateElement = (element, addClasses, removeClasses, delay = 0) => {
-  if (element) {
-    setTimeout(() => {
-      element.classList.remove(...removeClasses);
-      element.classList.add(...addClasses);
-    }, delay);
-  }
-}
+import { animateElement } from "./utils";
 
 export const showBioContent = (accordion) => {
   const bioContent = accordion.querySelector('.bio-content');
