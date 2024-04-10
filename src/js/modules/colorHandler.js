@@ -2,11 +2,11 @@ const body = document.querySelector('body')
 
 export const resetBodyColor = () => {
   body.classList.remove('bg-bio-color', 'bg-studies-color', 'bg-work-color', 'bg-projects-color', 'bg-social-color', 'bg-contact-color');
-  body.classList.add('bg-stone-200');
+  body.classList.add('bg-body-color');
 }
 
 export const changeBodyColor = (accordion) => {
-  body.classList.remove('bg-bio-color', 'bg-studies-color', 'bg-work-color', 'bg-projects-color', 'bg-social-color', 'bg-contact-color', 'bg-stone-200');
+  body.classList.remove('bg-bio-color', 'bg-studies-color', 'bg-work-color', 'bg-projects-color', 'bg-social-color', 'bg-contact-color', 'bg-body-color');
 
   if (accordion.classList.contains('bio-main')) {
     body.classList.add('bg-bio-color');

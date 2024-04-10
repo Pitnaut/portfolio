@@ -1,5 +1,6 @@
 
 import { openAccordion, closeAccordion } from './modules/accordions';
+import { changeBodyColor, resetBodyColor } from './modules/colorHandler';
 
 const accordions = Array.from(document.querySelectorAll('.accordion'));
 
