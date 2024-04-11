@@ -24,7 +24,7 @@ export const openAccordion = (accordion, accordions, title) => {
 
   accordions.forEach((otherAccordion) => {
     if (otherAccordion !== accordion) {
-      otherAccordion.classList.add('h-shrink');
+      otherAccordion.classList.add('h-shrink', 'text-slate-600');
       const otherTitle = otherAccordion.querySelector('.accordion-title');   
       setTimeout(() => {
         otherTitle.style.opacity = '1';
@@ -45,7 +45,7 @@ export const openAccordion = (accordion, accordions, title) => {
 
 export const closeAccordion = (accordion, accordions, title) => {
   accordion.classList.remove('h-open');
-  accordion.classList.remove('h-shrink');
+  accordion.classList.remove('h-shrink', 'text-slate-600');
   resetBodyColor();
 
   if (accordion.classList.contains('bio-main')){
@@ -65,7 +65,7 @@ export const closeAccordion = (accordion, accordions, title) => {
   }, 400);
 
   accordions.forEach((otherAccordion) => {
-    otherAccordion.classList.remove('h-shrink');
+    otherAccordion.classList.remove('h-shrink', 'text-slate-600');
   });
   
 }
