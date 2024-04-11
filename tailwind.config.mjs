@@ -27,7 +27,7 @@ export default {
 						'projects-color': '#fbd8ba',
 						'social-color': '#fed0c1',
 						'contact-color': '#fccaca',
-					}
+					},				
 			},
 	},
 	plugins: [],
