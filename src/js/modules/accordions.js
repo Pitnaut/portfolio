@@ -1,6 +1,7 @@
 import { changeBodyColor, resetBodyColor } from './colorHandler';
 import { showBioContent, hideBioContent } from './contentBio';
 import { showStudyContent, hideStudyContent} from './contentStudies';
+import { showWorkContent, hideWorkContent } from './contentWork';
 
 export const openAccordion = (accordion, accordions, title) => {
   accordions.forEach((otherAccordion) => {
@@ -39,6 +40,9 @@ export const openAccordion = (accordion, accordions, title) => {
     if (accordion.classList.contains('studies-main')){
       showStudyContent(accordion);
     }
+    if (accordion.classList.contains('work-main')){
+      showWorkContent(accordion);
+    }
   }, 600);
 
 }
@@ -53,6 +57,9 @@ export const closeAccordion = (accordion, accordions, title) => {
   }
   if (accordion.classList.contains('studies-main')){
     hideStudyContent(accordion);
+  }
+  if (accordion.classList.contains('work-main')){
+    hideWorkContent(accordion);
   }
 
   setTimeout(() => {
