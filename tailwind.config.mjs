@@ -10,8 +10,8 @@ export default {
 						'customsize': '3.25rem'
 					},
 					height: {
-							'open': '65vh',
-							'shrink': '7vh',
+							'open': '70vh',
+							'shrink': '7.5vh',
 					},
 					transitionTimingFunction: {
 						'ease-custom': 'ease-in-out',
