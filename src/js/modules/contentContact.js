@@ -6,6 +6,7 @@ export const showContactContent = (accordion) => {
   const contactTel = accordion.querySelector('.contact-tel');
   const contactEmail = accordion.querySelector('.contact-mail');
   const contactWhatsapp = accordion.querySelector('.contact-whatsapp');
+  const contactTelegram = accordion.querySelector('.contact-telegram');
 
   if (contactTel) {
     contactTel.addEventListener('click', function(event) {
@@ -21,6 +22,12 @@ export const showContactContent = (accordion) => {
 
   if (contactWhatsapp) {
     contactWhatsapp.addEventListener('click', function(event) {
+      event.stopPropagation();
+    });
+  }
+
+  if (contactTelegram) {
+    contactTelegram.addEventListener('click', function(event) {
       event.stopPropagation();
     });
   }
