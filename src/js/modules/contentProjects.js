@@ -19,6 +19,12 @@ export const showProjectsContent = (accordion) => {
     });
   });
 
+  images.forEach((img) => {
+    img.addEventListener('click', function(event) {
+      event.stopPropagation();
+    });
+  });
+
   animateElement(projectsContent, ['flex', 'opacity-100'], ['hidden', 'opacity-0']);
 }
 
