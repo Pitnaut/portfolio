@@ -14,6 +14,9 @@ export default {
 							'open': '70vh',
 							'shrink': '7.5vh',
 					},
+					width: {
+						'110' : '110%',
+					},
 					transitionTimingFunction: {
 						'ease-custom': 'ease-in-out',
 					},

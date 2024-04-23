@@ -7,7 +7,18 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 2px;
+  width: 3px;
+  height: 0;
+  background: #1e293b;
+  animation: border-slide 0.5s ease-in-out forwards;
+}
+
+.projects-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
   height: 0;
   background: #1e293b;
   animation: border-slide 0.5s ease-in-out forwards;
