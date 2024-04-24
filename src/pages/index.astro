@@ -15,7 +15,7 @@ import './src/styles/styles.css';
 	<body class="h-screen mx-auto m-0 font-questrial bg-body-color text-slate-800 duration-custom1s ease-custom">
 
 <!-- BIO SECTION -->
-		<div class="accordion bio-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
+		<section class="accordion bio-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
 
 			<div class="accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out m-0">
 				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Bio</h1>
@@ -33,9 +33,9 @@ import './src/styles/styles.css';
 				<p class="mx-4 mt-4 transform -translate-x-full opacity-0 transition-transform duration-custom1s ease-custom">Me gusta mucho hacer la música, sacar a los dogos y me gusta menos programá pero de algo hay que comé</p>
 			</div>
 
-		</div>
+		</section>
 <!-- STUDIES SECTION -->
-		<div class="accordion studies-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
+		<section class="accordion studies-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
 			<div class= "accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out">
 				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Studies</h1>
 			</div>
@@ -70,10 +70,10 @@ import './src/styles/styles.css';
 				</div>
 			</div>
 
-			</div>
-		</div>
+			</>
+		</section>
 <!-- WORK SECTION -->
-		<div class="accordion work-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
+		<section class="accordion work-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
 			<div class= "accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out">
 				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Work</h1>
 			</div>
@@ -98,10 +98,9 @@ import './src/styles/styles.css';
 
 				</div>
 			</div>
-		</div>
+		</section>
 <!-- PROJECTS SECTION -->
-		<div class="accordion projects-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
-
+		<section class="accordion projects-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
 			<div class= "accordion-title ps-6  text-6xl transition-opacity duration-500 ease-in-out">
 				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Projects</h1>
 			</div>
@@ -109,30 +108,30 @@ import './src/styles/styles.css';
 			<div class="projects-content relative border-slate-800 ml-8  hidden w-full h-full transition-opacity duration-500 ease-custom flex-col">
 				<div class="projects-list">
 					<ul class="text-3xl ml-8 mt-4">
-						<li class="lotto">Lotto</li>
-						<li class="shinny">Shinny Paws</li>
-						<li class="todo">To Do List</li>
-						<li class="sound">Sound Machine</li>
-						<li class="birds">Bird Guide</li>
+						<li class="lotto hover:scale-110 origin-0 transition-transform duration-200">Lotto</li>
+						<li class="shinny hover:scale-110 origin-0 transition-transform duration-200">Shinny Paws</li>
+						<li class="todo hover:scale-110 origin-0 transition-transform duration-200">To Do List</li>
+						<li class="sound hover:scale-110 origin-0 transition-transform duration-200">Sound Machine</li>
+						<li class="birds hover:scale-110 origin-0 transition-transform duration-200">Bird Guide</li>
 					</ul>
 				</div>
 				<div class="ml-8 projects-imgs mt-8 flex items-start justify-start">
 					<div class="img-container">
-						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 hover:w-110" href="https://pitnaut.github.io/lottery/lottery.html" target="_blank"><img class="img-lotto w-9/12" src="/public/images/lotto.png" alt="lotto"></a>
-						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 hover:w-110" href="https://shinnypaws.netlify.app/" target="_blank"><img class="img-shinny hidden w-9/12" src="/public/images/shinny.png" alt="shinny paws"></a>
-						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 hover:w-110" href="https://pit-todo-list.netlify.app/" target="_blank"><img class="img-todo hidden w-9/12" src="/public/images/todo.png" alt="to do list"></a>
-						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 hover:w-110" href="https://ultimate-sound-machine.netlify.app/" target="_blank"><img class="img-sound hidden w-9/12" src="/public/images/sound.png" alt="ultimate sound machine"></a>
-						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 hover:w-110" href="https://avesdemadrid.netlify.app/" target="_blank"><img class="img-birds hidden w-9/12" src="/public/images/birds.png" alt="guia de aves de Madrid"></a>
+						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-105" href="https://pitnaut.github.io/lottery/lottery.html" target="_blank"><img class="img-lotto w-9/12" src="/public/images/lotto.png" alt="lotto"></a>
+						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-105" href="https://shinnypaws.netlify.app/" target="_blank"><img class="img-shinny hidden w-9/12" src="/public/images/shinny.png" alt="shinny paws"></a>
+						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-105" href="https://pit-todo-list.netlify.app/" target="_blank"><img class="img-todo hidden w-9/12" src="/public/images/todo.png" alt="to do list"></a>
+						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-105" href="https://ultimate-sound-machine.netlify.app/" target="_blank"><img class="img-sound hidden w-9/12" src="/public/images/sound.png" alt="ultimate sound machine"></a>
+						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-105" href="https://avesdemadrid.netlify.app/" target="_blank"><img class="img-birds hidden w-9/12" src="/public/images/birds.png" alt="guia de aves de Madrid"></a>
 					</div>
 				</div>
-			</div>
-
-		</div>
+		</section>
 <!-- CONTACT SECTION -->
-		<div class="accordion contact-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
+		<section class="accordion contact-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
+
 			<div class= "accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out">
 				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Contact</h1>
 			</div>
+
 			<div class="contact-content hidden w-full h-full transition-opacity duration-500 ease-custom flex-col justify-center">
 				<div>
 					<p class="contact-intro mt-4 mx-8 text-xl opacity-0 transition-opacity duration-custom1s ease-custom">Hola, si quieres puedes contactarme por diferentes vías:</p>
@@ -218,6 +217,7 @@ import './src/styles/styles.css';
 					</a>
 				</div>
 		</div>
+	</section>
 
 	</body>
 </html>

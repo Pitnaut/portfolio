@@ -23,6 +23,9 @@ export default {
 					transitionDuration: {
 						'custom1s': '1s',
 					},
+					transformOrigin: {
+						'0': '0%',
+					},
 					colors: {
 						'body-color': '#dbffd7',
 						'bio-color': '#eaf6cb',
