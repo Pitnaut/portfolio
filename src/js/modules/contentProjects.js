@@ -5,14 +5,17 @@ export const showProjectsContent = (accordion) => {
   const clickableElements = accordion.querySelectorAll('.lotto, .shinny, .todo, .sound, .birds');
   const images = accordion.querySelectorAll('.img-lotto, .img-shinny, .img-todo, .img-sound, .img-birds');
 
-  clickableElements.forEach((element) => {
+  clickableElements.forEach((element, index) => {
+    // Añade la animación aquí
+    animateElement(element, ['opacity-100'], ['opacity-0'], 200 + index * 200);
+  
     element.addEventListener('click', function(event) {
       event.stopPropagation();
-
+  
       images.forEach((img) => {
         img.classList.add('hidden');
       });
-
+  
       const imgClass = `.img-${element.classList[0]}`;
       const img = accordion.querySelector(imgClass);
       img.classList.remove('hidden');
@@ -31,7 +34,12 @@ export const showProjectsContent = (accordion) => {
 
 export const hideProjectsContent = (accordion) => {
   const projectsContent = accordion.querySelector('.projects-content');
+  const clickableElements = accordion.querySelectorAll('.lotto, .shinny, .todo, .sound, .birds');
 
   animateElement(projectsContent, ['hidden', 'opacity-0'], ['flex', 'opacity-100'], 400);
+
+  clickableElements.forEach((element) => {
+    animateElement(element, ['opacity-0'], ['opacity-100'], 0);
+  });
 
 }
