@@ -3,223 +3,296 @@ import './src/styles/styles.css';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap" rel="stylesheet">
-		<title>Pedro M. Arévalo</title>
-		<script type="module" src="/src/js/main.js" defer></script>
-	</head>
-	<body class="h-screen mx-auto m-0 font-questrial bg-body-color text-slate-800 duration-custom1s ease-custom">
 
-<!-- BIO SECTION -->
-		<section class="accordion bio-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="generator" content={Astro.generator} />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap"
+		rel="stylesheet">
+	<title>Pedro M. Arévalo</title>
+	<script type="module" src="/src/js/main.js" defer></script>
+</head>
 
-			<div class="accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out m-0">
-				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Bio</h1>
-			</div>
+<body class="h-screen mx-auto m-0 font-questrial bg-body-color text-slate-800 duration-custom1s ease-custom">
 
-			<div class="bio-content mt-0 hidden w-full transition-opacity duration-500 ease-in-out flex-col items-start">
-				<div class="flex flex-row">
-					<img class="w-1/2 rounded-full ml-4 mt-4 transform scale-0 transition-transform duration-500 ease-in-out" src="/public/images/BN_snip_low.jpg" alt="Pedro Arévalo">
-					<div class="mt-16">
-						<h2 class="ml-8 text-2xl transform translate-x-full transition-transform duration-custom1s ease-custom">Pedro M. Arévalo<h2>
-						<h3 class="ml-8 transform translate-x-full transition-transform duration-custom1s ease-custom">Web Developer</h3>
-					</div>
-				</div>
-				<p class="mx-4 mt-4 transform -translate-x-full opacity-0 transition-transform duration-custom1s ease-custom">I'm a Web and and ABAP developer no se qué y no sé cuantos taliscuá hago cosas de programación. Me gusta comer pizza y vivo en vallekas tronko, no veas que movida</p>
-				<p class="mx-4 mt-4 transform -translate-x-full opacity-0 transition-transform duration-custom1s ease-custom">Me gusta mucho hacer la música, sacar a los dogos y me gusta menos programá pero de algo hay que comé</p>
-			</div>
+	<!-- BIO SECTION -->
+	<section
+		class="accordion bio-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
 
-		</section>
-<!-- STUDIES SECTION -->
-		<section class="accordion studies-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
-			<div class= "accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out">
-				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Studies</h1>
-			</div>
-			<div class="studies-content mt-0 hidden w-full h-full transition-opacity duration-500 ease-in-out flex-col justify-between">
-				<div class="studies-timeline relative  ml-8 my-4 border-slate-800 h-full flex flex-col justify-around">
+		<div class="accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out m-0">
+			<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Bio</h1>
+		</div>
 
-					<div class="study">
-						<h2 class="pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span class="font-bold text-xl">- Jul 2008 </span>Psychology</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">Universidad de Granada. Estudié psicología porque mejor psicólogo que abogao</p>
-					</div>
-
-					<div class="study">
-						<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span class="font-bold text-xl">- Jul 2011</span> Psychophamacology</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">Universidad Complutense de Madrid. Hice un máster y luego pues no pude trabajar de lo mío</p>
-					</div>
-
-					<div class="study">
-						<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span class="font-bold text-xl">- Sept 2023</span> Web Development</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">Codecademy. Después de los casinos tocó renovarse. Me tocó estudiar por mi cuenta, y bueno está web la he hecho yo.</p>
-					</div>
-
-					<div class="study">
-						<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span class="font-bold text-xl">- Dec 2023</span> ABAP Development</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">CFTIC Getafe. Me puse a estudiar una cosa nueva y con más salida que el desarrollo web.</p>
-					</div>
-
-					<div class="study">
-						<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span class="font-bold text-xl">- March 2024</span> ABAP Certified</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">Pues me certifiqué oficialmente de lo de ABAP. Ahora toca currar!!!</p>
-					</div>
-
+		<div class="bio-content mt-0 hidden w-full transition-opacity duration-500 ease-in-out flex-col items-start">
+			<div class="flex flex-row">
+				<img class="w-1/2 rounded-full ml-4 mt-4 transform scale-0 transition-transform duration-500 ease-in-out"
+					src="/public/images/BN_snip_low.jpg" alt="Pedro Arévalo">
+				<div class="mt-16">
+					<h2 class="ml-8 text-2xl transform translate-x-full transition-all duration-custom1s ease-custom opacity-0"">Pedro
+						M. Arévalo<h2>
+							<h3 class="ml-8 transform translate-x-full transition-all duration-custom1s ease-custom opacity-0">Web
+								Developer</h3>
 				</div>
 			</div>
+			<p class="mx-4 mt-4 transform -translate-x-full opacity-0 transition-transform duration-custom1s ease-custom">I'm
+				a Web and and ABAP developer no se qué y no sé cuantos taliscuá hago cosas de programación. Me gusta comer pizza
+				y vivo en vallekas tronko, no veas que movida</p>
+			<p class="mx-4 mt-4 transform -translate-x-full opacity-0 transition-transform duration-custom1s ease-custom">Me
+				gusta mucho hacer la música, sacar a los dogos y me gusta menos programá pero de algo hay que comé</p>
+		</div>
 
-			</>
-		</section>
-<!-- WORK SECTION -->
-		<section class="accordion work-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
-			<div class= "accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out">
-				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Work</h1>
-			</div>
+	</section>
+	<!-- STUDIES SECTION -->
+	<section
+		class="accordion studies-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
+		<div class="accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out">
+			<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Studies</h1>
+		</div>
+		<div
+			class="studies-content mt-0 hidden w-full h-full transition-opacity duration-500 ease-in-out flex-col justify-between">
+			<div class="studies-timeline relative  ml-8 my-4 border-slate-800 h-full flex flex-col justify-around">
 
-			<div class="work-content mt-0 hidden w-full h-full transition-opacity duration-500 ease-in-out flex-col justify-between">
-				<div class="work-timeline relative  ml-8 my-4 border-slate-800 h-full flex flex-col justify-around">
-
-					<div class="work">
-						<h2 class="pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span class="font-bold text-xl">- 2015-2018 </span>Vip Manager</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-					</div>
-
-					<div class="work">
-						<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span class="font-bold text-xl">- 2018-2022 </span>CRM Manager</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-					</div>
-
-					<div class="work">
-						<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span class="font-bold text-xl">- 2024</span> ABAP Developer</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-
-				</div>
-			</div>
-		</section>
-<!-- PROJECTS SECTION -->
-		<section class="accordion projects-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
-			<div class= "accordion-title ps-6  text-6xl transition-opacity duration-500 ease-in-out">
-				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Projects</h1>
-			</div>
-
-			<div class="projects-content relative border-slate-800 ml-8  hidden w-full h-full transition-opacity duration-500 ease-custom flex-col">
-				<div class="projects-list">
-					<ul class="text-3xl ml-8 mt-4">
-						<li class="lotto hover:scale-110 origin-0 transition-transform duration-200">Lotto</li>
-						<li class="shinny hover:scale-110 origin-0 transition-transform duration-200">Shinny Paws</li>
-						<li class="todo hover:scale-110 origin-0 transition-transform duration-200">To Do List</li>
-						<li class="sound hover:scale-110 origin-0 transition-transform duration-200">Sound Machine</li>
-						<li class="birds hover:scale-110 origin-0 transition-transform duration-200">Bird Guide</li>
-					</ul>
-				</div>
-				<div class="ml-8 projects-imgs mt-8 flex items-start justify-start">
-					<div class="img-container">
-						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-105" href="https://pitnaut.github.io/lottery/lottery.html" target="_blank"><img class="img-lotto w-9/12" src="/public/images/lotto.png" alt="lotto"></a>
-						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-105" href="https://shinnypaws.netlify.app/" target="_blank"><img class="img-shinny hidden w-9/12" src="/public/images/shinny.png" alt="shinny paws"></a>
-						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-105" href="https://pit-todo-list.netlify.app/" target="_blank"><img class="img-todo hidden w-9/12" src="/public/images/todo.png" alt="to do list"></a>
-						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-105" href="https://ultimate-sound-machine.netlify.app/" target="_blank"><img class="img-sound hidden w-9/12" src="/public/images/sound.png" alt="ultimate sound machine"></a>
-						<a class="flex justify-start items-center filter grayscale hover:grayscale-0 transition-all duration-300 hover:scale-105" href="https://avesdemadrid.netlify.app/" target="_blank"><img class="img-birds hidden w-9/12" src="/public/images/birds.png" alt="guia de aves de Madrid"></a>
-					</div>
-				</div>
-		</section>
-<!-- CONTACT SECTION -->
-		<section class="accordion contact-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
-
-			<div class= "accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out">
-				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Contact</h1>
-			</div>
-
-			<div class="contact-content hidden w-full h-full transition-opacity duration-500 ease-custom flex-col justify-center">
-				<div>
-					<p class="contact-intro mt-4 mx-8 text-xl opacity-0 transition-opacity duration-custom1s ease-custom">Hola, si quieres puedes contactarme por diferentes vías:</p>
+				<div class="study">
+					<h2 class="pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+							class="font-bold text-xl">- Jul 2008 </span>Psychology</h2>
+					<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+						Universidad de Granada. Estudié psicología porque mejor psicólogo que abogao</p>
 				</div>
 
-				<div class="contact-me ml-6 mt-4 flex items-center content-start">
+				<div class="study">
+					<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+							class="font-bold text-xl">- Jul 2011</span> Psychophamacology</h2>
+					<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+						Universidad Complutense de Madrid. Hice un máster y luego pues no pude trabajar de lo mío</p>
+				</div>
 
-					<a class="contact-tel pr-2" href="tel:34690318995">
-						<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out " xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 42 42">
-							<path fill="#1e293b" d="M31.5 6.65c0-2.589-.561-3.15-3-3.15h-17c-2.47 0-3 .529-3 3.15V36.5c0 2.439.56 3 3 3h17c2.5 0 3-.561 3-3V6.65zm-18 1.85h13v24h-13v-24zm8 28h-3v-2h3v2z"/>
+				<div class="study">
+					<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+							class="font-bold text-xl">- Sept 2023</span> Web Development</h2>
+					<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+						Codecademy. Después de los casinos tocó renovarse. Me tocó estudiar por mi cuenta, y bueno está web la he
+						hecho yo.</p>
+				</div>
+
+				<div class="study">
+					<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+							class="font-bold text-xl">- Dec 2023</span> ABAP Development</h2>
+					<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+						CFTIC Getafe. Me puse a estudiar una cosa nueva y con más salida que el desarrollo web.</p>
+				</div>
+
+				<div class="study">
+					<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+							class="font-bold text-xl">- March 2024</span> ABAP Certified</h2>
+					<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+						Pues me certifiqué oficialmente de lo de ABAP. Ahora toca currar!!!</p>
+				</div>
+
+			</div>
+		</div>
+
+		</>
+	</section>
+	<!-- WORK SECTION -->
+	<section
+		class="accordion work-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
+		<div class="accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out">
+			<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Work</h1>
+		</div>
+
+		<div
+			class="work-content mt-0 hidden w-full h-full transition-opacity duration-500 ease-in-out flex-col justify-between">
+			<div class="work-timeline relative  ml-8 my-4 border-slate-800 h-full flex flex-col justify-around">
+
+				<div class="work">
+					<h2 class="pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+							class="font-bold text-xl">- 2015-2018 </span>Vip Manager</h2>
+					<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+						dolore magna aliqua. Ut enim ad minim veniam</p>
+				</div>
+
+				<div class="work">
+					<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+							class="font-bold text-xl">- 2018-2022 </span>CRM Manager</h2>
+					<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+				</div>
+
+				<div class="work">
+					<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+							class="font-bold text-xl">- 2024</span> ABAP Developer</h2>
+					<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+						laborum.</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- PROJECTS SECTION -->
+	<section
+		class="accordion projects-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
+		<div class="accordion-title ps-6  text-6xl transition-opacity duration-500 ease-in-out">
+			<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Projects</h1>
+		</div>
+
+		<div
+			class="projects-content relative border-slate-800 ml-8  hidden w-full h-full transition-opacity duration-500 ease-custom flex-col">
+			<div class="projects-list">
+				<ul class="text-3xl ml-8 mt-4">
+					<li class="lotto hover:scale-110 origin-0 transition-transform duration-200">Lotto</li>
+					<li class="shinny hover:scale-110 origin-0 transition-transform duration-200">Shinny Paws</li>
+					<li class="todo hover:scale-110 origin-0 transition-transform duration-200">To Do List</li>
+					<li class="sound hover:scale-110 origin-0 transition-transform duration-200">Sound Machine</li>
+					<li class="birds hover:scale-110 origin-0 transition-transform duration-200">Bird Guide</li>
+				</ul>
+			</div>
+			<div class="ml-8 projects-imgs mt-8 flex items-start justify-start">
+				<div class="img-container">
+					<a class="flex justify-start items-center"
+						href="https://pitnaut.github.io/lottery/lottery.html" target="_blank"><img class="img-lotto w-9/12 border-2 rounded-md border-slate-800 filter grayscale hover:grayscale-0 transition-all duration-00 hover:scale-105"
+							src="/public/images/lotto.png" alt="lotto"></a>
+					<a class="flex justify-start items-center"
+						href="https://shinnypaws.netlify.app/" target="_blank"><img class="img-shinny hidden w-9/12 border-2 rounded-md border-slate-800 filter grayscale hover:grayscale-0 transition-all duration-00 hover:scale-105"
+							src="/public/images/shinny.png" alt="shinny paws"></a>
+					<a class="flex justify-start items-center"
+						href="https://pit-todo-list.netlify.app/" target="_blank"><img class="img-todo hidden w-9/12 border-2 rounded-md border-slate-800 filter grayscale hover:grayscale-0 transition-all duration-00 hover:scale-105"
+							src="/public/images/todo.png" alt="to do list"></a>
+					<a class="flex justify-start items-center"
+						href="https://ultimate-sound-machine.netlify.app/" target="_blank"><img class="img-sound hidden w-9/12 border-2 rounded-md border-slate-800 filter grayscale hover:grayscale-0 transition-all duration-00 hover:scale-105"
+							src="/public/images/sound.png" alt="ultimate sound machine"></a>
+					<a class="flex justify-start items-center"
+						href="https://avesdemadrid.netlify.app/" target="_blank"><img class="img-birds hidden w-9/12 border-2 rounded-md border-slate-800 filter grayscale hover:grayscale-0 transition-all duration-00 hover:scale-105"
+							src="/public/images/birds.png" alt="guia de aves de Madrid"></a>
+				</div>
+			</div>
+	</section>
+	<!-- CONTACT SECTION -->
+	<section
+		class="accordion contact-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
+
+		<div class="accordion-title ps-6 text-6xl transition-opacity duration-500 ease-in-out">
+			<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Contact</h1>
+		</div>
+
+		<div
+			class="contact-content hidden w-full h-full transition-opacity duration-500 ease-custom flex-col justify-center">
+			<div>
+				<p class="contact-intro mt-4 mx-8 text-2xl opacity-0 transition-opacity duration-custom1s ease-custom">Hola, si
+					quieres puedes contactarme por diferentes vías:</p>
+			</div>
+
+			<div class="contact-me ml-6 mt-4 flex items-center content-start">
+
+				<a class="contact-tel pr-2" href="tel:34690318995">
+					<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out "
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+						<path fill="#1e293b"
+							d="M31.5 6.65c0-2.589-.561-3.15-3-3.15h-17c-2.47 0-3 .529-3 3.15V36.5c0 2.439.56 3 3 3h17c2.5 0 3-.561 3-3V6.65zm-18 1.85h13v24h-13v-24zm8 28h-3v-2h3v2z" />
 					</svg>
-					</a>
+				</a>
 
 				<a class="contact-mail pr-2" href="mailto:pitarevalo@gmail.com">
-					<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
-						<path fill="#1e293b" d="M40.5 31.5v-18S22.3 26.2 20.53 26.859C18.79 26.23.5 13.5.5 13.5v18c0 2.5.53 3 3 3h34c2.529 0 3-.439 3-3zm-.029-21.529c0-1.821-.531-2.471-2.971-2.471h-34c-2.51 0-3 .78-3 2.6l.03.28s18.069 12.44 20 13.12c2.04-.79 19.97-13.4 19.97-13.4l-.029-.129z"/>
+					<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out "
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42">
+						<path fill="#1e293b"
+							d="M40.5 31.5v-18S22.3 26.2 20.53 26.859C18.79 26.23.5 13.5.5 13.5v18c0 2.5.53 3 3 3h34c2.529 0 3-.439 3-3zm-.029-21.529c0-1.821-.531-2.471-2.971-2.471h-34c-2.51 0-3 .78-3 2.6l.03.28s18.069 12.44 20 13.12c2.04-.79 19.97-13.4 19.97-13.4l-.029-.129z" />
 					</svg>
 				</a>
 
 				<a class="contact-whatsapp pr-2" href="https://wa.me/34690318995">
-					<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out"
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 						<g fill="none" fill-rule="evenodd">
-								<path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/>
-								<path fill="#1e293b" d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.546 20.2A1.01 1.01 0 0 0 3.8 21.454l3.032-.892A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2ZM9.738 14.263c2.023 2.022 3.954 2.289 4.636 2.314c1.037.038 2.047-.754 2.44-1.673a.696.696 0 0 0-.088-.703c-.548-.7-1.289-1.203-2.013-1.703a.711.711 0 0 0-.973.158l-.6.915a.229.229 0 0 1-.305.076c-.407-.233-1-.629-1.426-1.055c-.426-.426-.798-.992-1.007-1.373a.227.227 0 0 1 .067-.291l.924-.686a.712.712 0 0 0 .12-.94c-.448-.656-.97-1.49-1.727-2.043a.695.695 0 0 0-.684-.075c-.92.394-1.716 1.404-1.678 2.443c.025.682.292 2.613 2.314 4.636Z"/>
+							<path
+								d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z" />
+							<path fill="#1e293b"
+								d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.546 20.2A1.01 1.01 0 0 0 3.8 21.454l3.032-.892A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2ZM9.738 14.263c2.023 2.022 3.954 2.289 4.636 2.314c1.037.038 2.047-.754 2.44-1.673a.696.696 0 0 0-.088-.703c-.548-.7-1.289-1.203-2.013-1.703a.711.711 0 0 0-.973.158l-.6.915a.229.229 0 0 1-.305.076c-.407-.233-1-.629-1.426-1.055c-.426-.426-.798-.992-1.007-1.373a.227.227 0 0 1 .067-.291l.924-.686a.712.712 0 0 0 .12-.94c-.448-.656-.97-1.49-1.727-2.043a.695.695 0 0 0-.684-.075c-.92.394-1.716 1.404-1.678 2.443c.025.682.292 2.613 2.314 4.636Z" />
 						</g>
-				</svg>
+					</svg>
 				</a>
 
 				<a class="contact-telegram" href="https://t.me/Pitarevalo">
-					<svg class="w-6 transform scale-0 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-						<path fill="#1e293b" d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248s248-111.033 248-248S384.967 8 248 8m114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3c-3.476 18.584-10.322 24.816-16.948 25.425c-14.4 1.326-25.338-9.517-39.287-18.661c-21.827-14.308-34.158-23.215-55.346-37.177c-24.485-16.135-8.612-25 5.342-39.5c3.652-3.793 67.107-61.51 68.335-66.746c.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142q-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123c-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7q108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789c2.052-.034 6.639.474 9.61 2.885a10.452 10.452 0 0 1 3.53 6.716a43.765 43.765 0 0 1 .417 9.769"/>
-				</svg>
+					<svg class="w-6 transform scale-0 transition-transform duration-300 ease-in-out"
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+						<path fill="#1e293b"
+							d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248s248-111.033 248-248S384.967 8 248 8m114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3c-3.476 18.584-10.322 24.816-16.948 25.425c-14.4 1.326-25.338-9.517-39.287-18.661c-21.827-14.308-34.158-23.215-55.346-37.177c-24.485-16.135-8.612-25 5.342-39.5c3.652-3.793 67.107-61.51 68.335-66.746c.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142q-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123c-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7q108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789c2.052-.034 6.639.474 9.61 2.885a10.452 10.452 0 0 1 3.53 6.716a43.765 43.765 0 0 1 .417 9.769" />
+					</svg>
 				</a>
 
-				</div>		
-				
-				<div>
-					<p class="contact-intro-social mx-8 mt-4 text-xl opacity-0 transition-opacity duration-custom1s ease-custom">Puedes seguirme también en redes sociales</p>
-				</div>
+			</div>
 
-				<div class="contact-me-social ml-8 mt-4 flex items-center content-start">
-					<a class="contact-linkedin pr-2" href="https://www.linkedin.com/in/pedro-manuel-ar%C3%A9valo-gonz%C3%A1lez-140993147/" target="_blank">
-						<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20">
-							<path fill="#1e293b" d="M17.04 17.043h-2.962v-4.64c0-1.107-.023-2.531-1.544-2.531c-1.544 0-1.78 1.204-1.78 2.449v4.722H7.793V7.5h2.844v1.3h.039c.397-.75 1.364-1.54 2.808-1.54c3.001 0 3.556 1.974 3.556 4.545v5.238ZM4.447 6.194c-.954 0-1.72-.771-1.72-1.72s.767-1.72 1.72-1.72a1.72 1.72 0 0 1 0 3.44Zm1.484 10.85h-2.97V7.5h2.97v9.543ZM18.521 0H1.476C.66 0 0 .645 0 1.44v17.12C0 19.355.66 20 1.476 20h17.042c.815 0 1.482-.644 1.482-1.44V1.44C20 .646 19.333 0 18.518 0h.003Z"/>
-						</svg>	
-					</a>
+			<div>
+				<p class="contact-intro-social mx-8 mt-4 text-2xl opacity-0 transition-opacity duration-custom1s ease-custom">
+					Puedes seguirme también en redes sociales</p>
+			</div>
 
-					<a class="contact-instagram pr-2" href="https://www.instagram.com/pitthebrewer/ target="_blank"">
-						<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
-							<path fill="#1e293b" fill-rule="evenodd" d="M3.39.787A2.604 2.604 0 0 0 .786 3.39v6.944a2.604 2.604 0 0 0 2.604 2.604h6.944a2.604 2.604 0 0 0 2.603-2.604V3.39A2.604 2.604 0 0 0 10.334.787zm7.693 2.607a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0m-4.22 1.388a2.08 2.08 0 1 0 0 4.16a2.08 2.08 0 0 0 0-4.16m-3.081 2.08a3.08 3.08 0 1 1 6.16 0a3.08 3.08 0 0 1-6.16 0" clip-rule="evenodd"/>
-						</svg>
-					</a>
+			<div class="contact-me-social ml-8 mt-4 flex items-center content-start">
+				<a class="contact-linkedin pr-2"
+					href="https://www.linkedin.com/in/pedro-manuel-ar%C3%A9valo-gonz%C3%A1lez-140993147/" target="_blank">
+					<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out"
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+						<path fill="#1e293b"
+							d="M17.04 17.043h-2.962v-4.64c0-1.107-.023-2.531-1.544-2.531c-1.544 0-1.78 1.204-1.78 2.449v4.722H7.793V7.5h2.844v1.3h.039c.397-.75 1.364-1.54 2.808-1.54c3.001 0 3.556 1.974 3.556 4.545v5.238ZM4.447 6.194c-.954 0-1.72-.771-1.72-1.72s.767-1.72 1.72-1.72a1.72 1.72 0 0 1 0 3.44Zm1.484 10.85h-2.97V7.5h2.97v9.543ZM18.521 0H1.476C.66 0 0 .645 0 1.44v17.12C0 19.355.66 20 1.476 20h17.042c.815 0 1.482-.644 1.482-1.44V1.44C20 .646 19.333 0 18.518 0h.003Z" />
+					</svg>
+				</a>
 
-					<a class="contact-bluesky pr-2" href="https://bsky.app/profile/pitnaut.bsky.social target="_blank"">
-						<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-							<path fill="#1e293b" d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565C.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479c.815 2.736 3.713 3.66 6.383 3.364c.136-.02.275-.039.415-.056c-.138.022-.276.04-.415.056c-3.912.58-7.387 2.005-2.83 7.078c5.013 5.19 6.87-1.113 7.823-4.308c.953 3.195 2.05 9.271 7.733 4.308c4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056c2.67.297 5.568-.628 6.383-3.364c.246-.828.624-5.79.624-6.478c0-.69-.139-1.861-.902-2.206c-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8"/>
-						</svg>
-					</a>
-				</div>
+				<a class="contact-instagram pr-2" href="https://www.instagram.com/pitthebrewer/ target=" _blank"">
+					<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out"
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
+						<path fill="#1e293b" fill-rule="evenodd"
+							d="M3.39.787A2.604 2.604 0 0 0 .786 3.39v6.944a2.604 2.604 0 0 0 2.604 2.604h6.944a2.604 2.604 0 0 0 2.603-2.604V3.39A2.604 2.604 0 0 0 10.334.787zm7.693 2.607a.75.75 0 1 1-1.5 0a.75.75 0 0 1 1.5 0m-4.22 1.388a2.08 2.08 0 1 0 0 4.16a2.08 2.08 0 0 0 0-4.16m-3.081 2.08a3.08 3.08 0 1 1 6.16 0a3.08 3.08 0 0 1-6.16 0"
+							clip-rule="evenodd" />
+					</svg>
+				</a>
 
-				<div>
-					<p class="contact-intro-github mx-8 mt-4 text-xl opacity-0 transition-opacity duration-custom1s ease-custom">Puedes ver el código de todos mis proyectos de forma gratuita en Github</p>
-				</div>
+				<a class="contact-bluesky pr-2" href="https://bsky.app/profile/pitnaut.bsky.social target=" _blank"">
+					<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out"
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path fill="#1e293b"
+							d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565C.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479c.815 2.736 3.713 3.66 6.383 3.364c.136-.02.275-.039.415-.056c-.138.022-.276.04-.415.056c-3.912.58-7.387 2.005-2.83 7.078c5.013 5.19 6.87-1.113 7.823-4.308c.953 3.195 2.05 9.271 7.733 4.308c4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056c2.67.297 5.568-.628 6.383-3.364c.246-.828.624-5.79.624-6.478c0-.69-.139-1.861-.902-2.206c-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8" />
+					</svg>
+				</a>
+			</div>
 
-				<div class="contact-me-github ml-8 mt-4 flex items-center content-start">
-					<a class="contact-github" href="https://github.com/Pitnaut" target="_blank">
-						<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 416">
-							<path fill="#1e293b" d="M213.5 0q88.5 0 151 62.5T427 213q0 70-41 125.5T281 416q-14 2-14-11v-58q0-27-15-40q44-5 70.5-27t26.5-77q0-34-22-58q11-26-2-57q-18-5-58 22q-26-7-54-7t-53 7q-18-12-32.5-17.5T107 88h-6q-12 31-2 57q-22 24-22 58q0 55 27 77t70 27q-11 10-13 29q-42 18-62-18q-12-20-33-22q-2 0-4.5.5t-5 3.5t8.5 9q14 7 23 31q1 2 2 4.5t6.5 9.5t13 10.5T130 371t30-2v36q0 13-14 11q-64-22-105-77.5T0 213q0-88 62.5-150.5T213.5 0z"/>
-						</svg>
-					</a>
-				</div>
+			<div>
+				<p class="contact-intro-github mx-8 mt-4 text-2xl opacity-0 transition-opacity duration-custom1s ease-custom">
+					Puedes ver el código de todos mis proyectos de forma gratuita en Github</p>
+			</div>
 
-				<div>
-					<p class="contact-intro-cv mx-8 mt-4 text-xl opacity-0 transition-opacity duration-custom1s ease-custom">¡Descarga mi CV!</p>
-				</div>
+			<div class="contact-me-github ml-8 mt-4 flex items-center content-start">
+				<a class="contact-github" href="https://github.com/Pitnaut" target="_blank">
+					<svg class="w-8 transform scale-0 transition-transform duration-300 ease-in-out"
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 416">
+						<path fill="#1e293b"
+							d="M213.5 0q88.5 0 151 62.5T427 213q0 70-41 125.5T281 416q-14 2-14-11v-58q0-27-15-40q44-5 70.5-27t26.5-77q0-34-22-58q11-26-2-57q-18-5-58 22q-26-7-54-7t-53 7q-18-12-32.5-17.5T107 88h-6q-12 31-2 57q-22 24-22 58q0 55 27 77t70 27q-11 10-13 29q-42 18-62-18q-12-20-33-22q-2 0-4.5.5t-5 3.5t8.5 9q14 7 23 31q1 2 2 4.5t6.5 9.5t13 10.5T130 371t30-2v36q0 13-14 11q-64-22-105-77.5T0 213q0-88 62.5-150.5T213.5 0z" />
+					</svg>
+				</a>
+			</div>
 
-				<div class="contact-me-cv ml-8 mt-4 flex items-center content-start">
-					<a class="contact-cv" href="https://drive.google.com/file/d/13qL95cy-2-DfGyeO0lWtiBxgCA_DJBZB/view" target="_blank">
-						<svg class="w-8 mb-6 transform scale-0 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16">
-							<path fill="#1e293b" d="M16 10h-5.5L8 12.5L5.5 10H0v6h16v-6zM4 14H2v-2h2v2z"/>
-							<path fill="#1e293b" d="M10 6V0H6v6H3l5 5l5-5z"/>
-						</svg>
-					</a>
-				</div>
+			<div>
+				<p class="contact-intro-cv mx-8 mt-4 text-2xl opacity-0 transition-opacity duration-custom1s ease-custom">
+					¡Descarga mi CV!</p>
+			</div>
+
+			<div class="contact-me-cv ml-8 mt-4 flex items-center content-start">
+				<a class="contact-cv" href="https://drive.google.com/file/d/13qL95cy-2-DfGyeO0lWtiBxgCA_DJBZB/view"
+					target="_blank">
+					<svg class="w-8 mb-6 transform scale-0 transition-transform duration-300 ease-in-out"
+						xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+						<path fill="#1e293b" d="M16 10h-5.5L8 12.5L5.5 10H0v6h16v-6zM4 14H2v-2h2v2z" />
+						<path fill="#1e293b" d="M10 6V0H6v6H3l5 5l5-5z" />
+					</svg>
+				</a>
+			</div>
 		</div>
 	</section>
 
-	</body>
+</body>
+
 </html>
-
-
