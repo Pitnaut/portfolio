@@ -21,7 +21,7 @@ import './src/styles/styles.css';
 	<main class="h-screen  m-0 max-w-7xl">
 		<!-- BIO SECTION -->
 		<section
-			class="accordion bio-main h-1/5 overflow-auto cursor-pointer transition-height duration-700 ease-in-out flex items-center">
+			class="accordion bio-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
 
 			<div
 				class="accordion-title ps-6 text-6xl md:text-7xl lg:text-8xl xl:text-9xl transition-opacity duration-500 ease-in-out m-0">
@@ -29,21 +29,20 @@ import './src/styles/styles.css';
 			</div>
 
 			<div
-				class="bio-content mt-0 hidden h-full w-full transition-opacity duration-500 ease-in-out flex-col justify-center">
+				class="bio-content mt-4 hidden h-full w-full transition-opacity duration-500 ease-in-out flex-col justify-center">
 				<div class="flex flex-row">
-					<img
-						class="w-1/2 max-w-xl rounded-full ml-8 transform scale-0 transition-transform duration-500 ease-in-out"
+					<img class="w-1/2 max-w-xl rounded-full ml-8 transform scale-0 transition-transform duration-500 ease-in-out"
 						src="/public/images/BN_snip_low.jpg" alt="Pedro Arévalo">
 					<div class="mt-14 md:mt-36">
 						<h2
-							class="ml-8 mr-8 text-2xl md:text-6xl lg:text-8xl transform translate-x-full transition-all duration-custom1s ease-custom opacity-0"">Pedro
+							class="ml-8 mr-4 text-2xl md:text-6xl lg:text-8xl transform translate-x-full transition-all duration-custom1s ease-custom opacity-0"">Pedro
 						M. Arévalo<h2>
-							<h3 class=" ml-8 mr-8 transform md:text-4xl lg:text-6xl translate-x-full transition-all duration-custom1s ease-custom
-							opacity-0">Web
+							<h3 class=" ml-8 mr-8 transform md:text-4xl lg:text-6xl translate-x-full transition-all duration-custom1s
+							ease-custom opacity-0">Web
 							Developer</h3>
 					</div>
 				</div>
-				<div class="flex flex-col mx-4">
+				<div class="flex flex-col mx-4 overflow-auto">
 					<p
 						class="mx-4 mt-4 md:text-2xl transform -translate-x-full opacity-0 transition-transform duration-custom1s ease-custom">
 						¡Hola! Soy un malagueño afincado en Madrid que adora programar.
@@ -65,46 +64,50 @@ import './src/styles/styles.css';
 			class="accordion studies-main h-1/5 overflow-hidden cursor-pointer transition-height duration-700 ease-in-out flex items-center">
 			<div
 				class="accordion-title ps-6 text-6xl md:text-7xl lg:text-8xl xl:text-9xl transition-opacity duration-500 ease-in-out">
-				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Studies</h1>
+				<h1 class="m-0 transition-transform duration-200 ease-in-out hover:scale-110">Estudios</h1>
 			</div>
 			<div
 				class="studies-content mt-0 hidden w-full h-full transition-opacity duration-500 ease-in-out flex-col justify-between">
 				<div class="studies-timeline relative  ml-8 my-4 border-slate-800 h-full flex flex-col justify-around">
 
 					<div class="study">
-						<h2 class="pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
-								class="font-bold text-xl">- Jul 2008 </span>Psychology</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
-							Universidad de Granada. Estudié psicología porque mejor psicólogo que abogao</p>
+						<h2 class="pl-6 text-xl md:text-3xl lg:text-4xl xl:text-6xl transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+								class="font-bold text-lg md:text-2xl lg:text-3xl xl:text-5xl">Jul 2008 </span>Psicología</h2>
+						<p
+							class="pl-6 text-sm md:text-xl lg:text-2xl xl:text-4xl mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+							Universidad de Granada.</p>
 					</div>
 
 					<div class="study">
-						<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
-								class="font-bold text-xl">- Jul 2011</span> Psychophamacology</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
-							Universidad Complutense de Madrid. Hice un máster y luego pues no pude trabajar de lo mío</p>
+						<h2 class="pl-6 text-xl md:text-3xl lg:text-4xl xl:text-6xl transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+								class="font-bold text-lg md:text-2xl lg:text-3xl xl:text-5xl">Jul 2011</span> Máster psicofarmacología</h2>
+						<p
+							class="pl-6 text-sm md:text-xl lg:text-2xl xl:text-xl mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+							Universidad Complutense de Madrid. </p>
 					</div>
 
 					<div class="study">
-						<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
-								class="font-bold text-xl">- Sept 2023</span> Web Development</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
-							Codecademy. Después de los casinos tocó renovarse. Me tocó estudiar por mi cuenta, y bueno está web la he
-							hecho yo.</p>
+						<h2 class="pl-6 text-xl md:text-3xl lg:text-4xl xl:text-6xl transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+								class="font-bold text-lg md:text-2xl lg:text-3xl xl:text-5xl">Sept 2023</span> Desarrollo Front-end</h2>
+						<p
+							class="pl-6 text-sm md:text-xl lg:text-2xl xl:text-4xl mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+							Codecademy. </p>
 					</div>
 
 					<div class="study">
-						<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
-								class="font-bold text-xl">- Dec 2023</span> ABAP Development</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
-							CFTIC Getafe. Me puse a estudiar una cosa nueva y con más salida que el desarrollo web.</p>
+						<h2 class="pl-6 text-xl md:text-3xl lg:text-4xl xl:text-6xl transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+								class="font-bold text-lg md:text-2xl lg:text-3xl xl:text-5xl">Dic 2023</span> Programación ABAP</h2>
+						<p
+							class="pl-6 text-sm md:text-xl lg:text-2xl xl:text-4xl mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+							CFTIC Getafe.</p>
 					</div>
 
 					<div class="study">
-						<h2 class="mt-4 pl-4 text-lg transform opacity-0 transition-opacity duration-500 ease-custom"> <span
-								class="font-bold text-xl">- March 2024</span> ABAP Certified</h2>
-						<p class="pl-4 text-sm mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
-							Pues me certifiqué oficialmente de lo de ABAP. Ahora toca currar!!!</p>
+						<h2 class="pl-6 text-xl md:text-3xl lg:text-4xl xl:text-6xl transform opacity-0 transition-opacity duration-500 ease-custom"> <span
+								class="font-bold text-lg md:text-2xl lg:text-3xl xl:text-5xl">Mar 2024</span> Certificado ABAP</h2>
+						<p
+							class="pl-6 text-sm md:text-xl lg:text-2xl xl:text-4xl mr-4 transform translate-x-full transition-transform duration-custom1s ease-custom">
+							Desarrollo SAP NetWeaver 7.50.</p>
 					</div>
 
 				</div>
