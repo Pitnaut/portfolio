@@ -12,7 +12,7 @@ export const showWorkContent = (accordion) => {
   });
 
   jobDescriptions.forEach((ul, index) => {
-    animateElement(ul, ['translate-x-0'], ['translate-x-full'], 400 + index * 400);
+    animateElement(ul, ['translate-x-0', 'opacity-100'], ['translate-x-full', 'opacity-0'], 400 + index * 400);
   });
 }
 
@@ -28,6 +28,6 @@ export const hideWorkContent = (accordion) => {
   });
 
   jobDescriptions.forEach((ul, index) => {
-    animateElement(ul, ['translate-x-full'], ['translate-x-0'], 400 + index * 400);
+    animateElement(ul, ['translate-x-full', 'opacity-0'], ['translate-x-0', 'opacity-100'], 400 + index * 400);
   });
 }
