@@ -33,7 +33,11 @@ export default {
 						'work-color': '#ffe3c7',
 						'projects-color': '#ffdcce',
 						'contact-color': '#ffd6d6',
-					},				
+					},
+					listStyleType: {
+						square: 'square',
+						circle: 'circle',
+					},			
 			},
 	},
 	plugins: [
