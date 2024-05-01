@@ -82,8 +82,8 @@ export const closeAccordion = (accordion, accordions, title) => {
     accordion.classList.remove('items-start');
     setTimeout(() => {
       title.style.opacity = '1';
-    }, 400);
-  }, 400);
+    }, 500);
+  }, 500);
 
   accordions.forEach((otherAccordion) => {
     otherAccordion.classList.remove('h-shrink');
