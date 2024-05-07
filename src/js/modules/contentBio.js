@@ -3,7 +3,7 @@ import { animateElement } from "./utils";
 export const showBioContent = (accordion) => {
   const bioContent = accordion.querySelector('.bio-content');
   const image = accordion.querySelector('.bio-content img');
-  const name = accordion.querySelector('h2');
+  const name = accordion.querySelector('.name-and-prof h2');
   const profession = accordion.querySelector('h3');
   const paragraphs = accordion.querySelectorAll('p');
 
@@ -20,7 +20,7 @@ export const showBioContent = (accordion) => {
 export const hideBioContent = (accordion) => {
   const bioContent = accordion.querySelector('.bio-content');
   const image = accordion.querySelector('.bio-content img');
-  const name = accordion.querySelector('h2');
+  const name = accordion.querySelector('.name-and-prof h2');
   const profession = accordion.querySelector('h3');
   const paragraphs = accordion.querySelectorAll('p');
 
