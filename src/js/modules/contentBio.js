@@ -13,7 +13,7 @@ export const showBioContent = (accordion) => {
   animateElement(profession, ['opacity-100'], ['opacity-0'], 500);
 
   paragraphs.forEach((p, index) => {
-    animateElement(p, ['translate-x-0', 'opacity-100'], ['-translate-x-full', 'opacity-0'], 1000 + index * 500);
+    animateElement(p, ['translate-x-0', 'opacity-100'], ['-translate-x-full', 'opacity-0'], 700 + index * 500);
   });
 }
 
