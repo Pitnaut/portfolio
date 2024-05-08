@@ -1,4 +1,4 @@
-import { animateElement } from "./utils";
+import { animateElement } from "./utils.js";
 
 export const showProjectsContent = (accordion) => {
   const projectsContent = accordion.querySelector('.projects-content');

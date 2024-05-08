@@ -1,9 +1,9 @@
-import { changeBodyColor, resetBodyColor } from './colorHandler';
-import { showBioContent, hideBioContent } from './contentBio';
-import { showStudyContent, hideStudyContent} from './contentStudies';
-import { showWorkContent, hideWorkContent } from './contentWork';
-import { showContactContent, hideContactContent } from './contentContact';
-import { showProjectsContent, hideProjectsContent } from './contentProjects';
+import { changeBodyColor, resetBodyColor } from './colorHandler.js';
+import { showBioContent, hideBioContent } from './contentBio.js';
+import { showStudyContent, hideStudyContent} from './contentStudies.js';
+import { showWorkContent, hideWorkContent } from './contentWork.js';
+import { showContactContent, hideContactContent } from './contentContact.js';
+import { showProjectsContent, hideProjectsContent } from './contentProjects.js';
 
 export const openAccordion = (accordion, accordions, title) => {
   accordions.forEach((otherAccordion) => {

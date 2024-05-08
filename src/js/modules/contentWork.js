@@ -1,4 +1,4 @@
-import { animateElement } from "./utils";
+import { animateElement } from "./utils.js";
 
 export const showWorkContent = (accordion) => {
   const workContent = accordion.querySelector('.work-content');
